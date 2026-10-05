@@ -1,3 +1,5 @@
+"use server"
+
 import { categoryData, CategoryResponse } from "./category.interface";
 
 export async function getAllCategories():Promise<categoryData[]>{

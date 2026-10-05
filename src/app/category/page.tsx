@@ -3,7 +3,7 @@ import React from "react";
 import { getAllCategories } from "../category.services";
 import CategoriesCards from "@/components/categories/CategoriesCards";
 import Link from "next/link";
-
+export const dynamic = "force-dynamic";
 export default async function page() {
        const data2 =await getAllCategories()
   
