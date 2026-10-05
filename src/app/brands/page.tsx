@@ -3,7 +3,7 @@ import { getAllBrands } from './brands.action'
 import { Layers, Tag } from 'lucide-react'
 import BrandsCard from '@/components/brandCard/BrandsCard'
 import Link from 'next/link'
-
+export const dynamic = "force-dynamic";
 export default async function page() {
     const data=await getAllBrands()
   return (
