@@ -1,3 +1,4 @@
+"use server"
 import { AllProductsResponse, product } from "./home.interface";
 
 export async function getAllProducts(filters?: {

@@ -6,7 +6,7 @@ import FreshCard from "@/components/freshcard/FreshCard";
 import { getAllCategories } from "./category.services";
 import CategoryCard from "@/components/categoryCard/CategoryCard";
 import NewStellar from "@/components/NewStellar/NewStellar";
-
+export const dynamic = "force-dynamic";
 export default async function Home() {
   const data = await getAllProducts();
      const data2 =await getAllCategories()
