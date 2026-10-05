@@ -1,3 +1,4 @@
+"use server"
 import { brand, BrandsResponse } from "./brands.interface";
 
 export async function getAllBrands():Promise<brand[]>{

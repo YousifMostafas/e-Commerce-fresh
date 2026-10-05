@@ -1,5 +1,5 @@
 import React from 'react'
-import { getAllBrands } from './brands.services'
+import { getAllBrands } from './brands.action'
 import { Layers, Tag } from 'lucide-react'
 import BrandsCard from '@/components/brandCard/BrandsCard'
 import Link from 'next/link'
