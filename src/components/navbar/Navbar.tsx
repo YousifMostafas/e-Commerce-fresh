@@ -11,7 +11,7 @@ import {
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import Link from "next/link";
-import { Headset, Heart, LogOut, ShoppingCart, User, UserCircle, UserPlus } from "lucide-react";
+import { Headset, Heart, LogOut, Search, ShoppingCart, User, UserCircle, UserPlus } from "lucide-react";
 import Image from "next/image";
 import img from "@/assets/images/freshcart-logo.svg";
 import { Input } from "@base-ui/react";
@@ -192,10 +192,19 @@ export default function Navbar() {
         <Image src={img} alt="logo" />
       </div>
 
-      <Input
-        className="grow p-2 px-3.5 hidden md:flex focus:outline-main-color/50 rounded-4xl"
-        placeholder="Search for products, brands and more..."
-      />
+  <div className="relative hidden grow md:block">
+  <Input
+    className="w-full rounded-4xl p-2 px-3.5 pr-14 focus:outline-main-color/50"
+    placeholder="Search for products, brands and more..."
+  />
+  <button
+    type="button"
+    aria-label="Search"
+    className="absolute right-1.5 top-1/2 flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-main-color text-white transition-colors hover:bg-[#15803D]"
+  >
+    <Search className="size-4" />
+  </button>
+</div>
 
       <NavigationMenuList className="justify-end">
         {/* Mobile Menu */}
