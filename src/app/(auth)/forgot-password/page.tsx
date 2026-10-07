@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import ForgotPasswordForm from "../../../components/forgetpasswordform/ForgotPasswordForm";
+export const dynamic = "force-dynamic";
 
 export default function page() {
   return (

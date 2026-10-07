@@ -13,6 +13,7 @@ import { LoginFormData } from "./login.interface";
 import Link from "next/link";
 import { Eye, EyeOff, Lock, Mail } from "lucide-react";
 import { signIn } from "next-auth/react";
+export const dynamic = "force-dynamic";
 
 export default function LoginForm() {
     const [showPassword, setShowPassword] = useState(false);

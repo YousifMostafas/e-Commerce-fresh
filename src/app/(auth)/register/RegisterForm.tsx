@@ -12,6 +12,7 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import { RegisterAction } from "./register.action";
 import { getPasswordStrength } from "./password-strength";
+export const dynamic = "force-dynamic";
 
 export default function RegisterForm() {
   const { handleSubmit, control } = useForm({

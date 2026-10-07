@@ -5,6 +5,7 @@ import LoginForm from './LoginForm'
 import Link from 'next/link'
 import Image from 'next/image'
 import freshcart from '@/assets/images/cartfreshimg.png'
+export const dynamic = "force-dynamic";
 
 export default function page() {
   return (
