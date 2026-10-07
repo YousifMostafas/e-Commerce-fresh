@@ -3,8 +3,10 @@ import React from 'react'
 import author from '@/assets/images/review-author.webp'
 import RegisterForm from '@/app/(auth)/register/RegisterForm'
 import Link from 'next/link'
-export default function page() {
+
   export const dynamic = "force-dynamic";
+
+export default function page() {
 
   return (
 <>
